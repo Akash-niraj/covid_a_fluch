@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee5de"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="GOVERNMENT AID"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="CONSOLIDENCE to your closed ones. A SMALL HELP BY GOVERNMENT-->"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Centre announces measures for families who lost earning members to Covid-19. All you need to know"
+        android:textColor="@color/MODERNA"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Bihar announces compensation of ₹4 lakh to kin of those who died due to Covid"
+        android:textColor="@color/MODERNA"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            >
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textStyle="bold"
+        >
+
+        <!-- Label -->
+        <TextView
+            android:text="PERSONAL INFORMATION"
+              android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"/>
+
+            <EditText
+                android:id="@+id/edit_pet_name"
+                android:hint="NAME"
+                android:inputType="textCapWords"
+                 android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="50dp"/>
+
+            <!-- Breed field -->
+            <EditText
+                android:id="@+id/edit_pet_breed"
+                android:hint="HOSPITAL ADMITTED"
+                android:inputType="textCapWords"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="50dp"
+               />
+        </LinearLayout>
+            <LinearLayout
+        android:id="@+id/container_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Label -->
+        <TextView
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <!-- Input field -->
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_height="48dp"
+                android:layout_width="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="50dp"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+
+
+
+
+
+    <!-- Measurement category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Label -->
+        <TextView
+            android:text="ACCOUNT INFORMATION :"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <!-- Weight field -->
+            <EditText
+                android:id="@+id/edit_pet_weight"
+                android:hint="ACCOUNT NUMBER"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="50dp"/>
+
+            <EditText
+                android:id="@+id/edit_pet_weight"
+                android:hint="BANK NAME"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="50dp"/>
+            <EditText
+                android:id="@+id/edit_pet_weight"
+                android:hint="IFSC"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="50dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:text="IDENTITY VERIFICATION :"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="40dp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
